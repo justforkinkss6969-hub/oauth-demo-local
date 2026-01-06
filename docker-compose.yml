@@ -1,0 +1,9 @@
+version: "3.9"
+
+services:
+  creatorsphere:
+    build: .
+    container_name: creatorsphere-demo
+    ports:
+      - "3000:3000"
+    restart: unless-stopped

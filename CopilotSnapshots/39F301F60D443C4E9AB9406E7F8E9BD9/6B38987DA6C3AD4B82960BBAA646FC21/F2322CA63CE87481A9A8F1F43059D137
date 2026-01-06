@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CreatorSphere � Investor Demo Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app">
+    <header class="app-header glass-panel">
+      <div>
+        <h1>CreatorSphere</h1>
+        <p>AI?powered, privacy?first creator operating system.</p>
+      </div>
+      <div class="tagline">Where creators own their universe.</div>
+    </header>
+
+    <main class="layout">
+      <section class="column">
+        <div class="card glass-panel" id="summary-card">
+          <h2>Earnings Overview</h2>
+          <div class="metrics-row">
+            <div class="metric">
+              <span class="metric-label">This Month</span>
+              <span class="metric-value" id="metric-earnings">$0</span>
+            </div>
+            <div class="metric">
+              <span class="metric-label">Subscribers</span>
+              <span class="metric-value" id="metric-subs">0</span>
+              <span class="metric-sub" id="metric-subs-growth"></span>
+            </div>
+            <div class="metric">
+              <span class="metric-label">Tips</span>
+              <span class="metric-value" id="metric-tips">$0</span>
+            </div>
+          </div>
+          <div class="metrics-row">
+            <div class="metric">
+              <span class="metric-label">PPV Revenue</span>
+              <span class="metric-value" id="metric-ppv">$0</span>
+            </div>
+            <div class="metric">
+              <span class="metric-label">Storefront</span>
+              <span class="metric-value" id="metric-store">$0</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="card glass-panel" id="forecast-card">
+          <h2>Revenue Forecast</h2>
+          <p>Based on current performance and AI optimization.</p>
+          <div class="metrics-row">
+            <div class="metric">
+              <span class="metric-label">Current Net</span>
+              <span class="metric-value" id="forecast-current">$0</span>
+            </div>
+            <div class="metric">
+              <span class="metric-label">12?Month Forecast</span>
+              <span class="metric-value" id="forecast-12m">$0</span>
+            </div>
+            <div class="metric">
+              <span class="metric-label">With AI Boost</span>
+              <span class="metric-value" id="forecast-ai">$0</span>
+            </div>
+          </div>
+          <p class="metric-sub" id="forecast-note"></p>
+        </div>
+      </section>
+
+      <section class="column">
+        <div class="card glass-panel" id="ai-card">
+          <h2>AI Insights</h2>
+          <div id="ai-insights">
+            <!-- Filled by JS -->
+          </div>
+        </div>
+
+        <div class="card glass-panel" id="caption-card">
+          <h2>AI Caption Generator</h2>
+          <p>Type a brief description and see how the AI helps creators ship faster.</p>
+          <textarea id="caption-input" placeholder="e.g. New photoset dropping tonight"></textarea>
+          <button id="caption-generate">Generate Caption</button>
+          <div id="caption-output"></div>
+        </div>
+      </section>
+
+      <section class="column">
+        <div class="card glass-panel" id="content-card">
+          <h2>Content Performance</h2>
+          <div id="content-list">
+            <!-- Filled by JS -->
+          </div>
+        </div>
+
+        <div class="card glass-panel" id="pitch-card">
+          <h2>Investor Narrative (Snapshot)</h2>
+          <p>
+            CreatorSphere is the AI?powered, privacy?first creator platform that combines instant payouts,
+            AI growth tools, advanced privacy, storefronts, and community into a single creator operating system.
+          </p>
+          <p>
+            This dashboard demo shows how creators will see their earnings, growth, and AI?driven insights.
+            Under the hood, these API endpoints connect to the AI system defined in the PRD in <code>docs/ai-system-prd.md</code>.
+          </p>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

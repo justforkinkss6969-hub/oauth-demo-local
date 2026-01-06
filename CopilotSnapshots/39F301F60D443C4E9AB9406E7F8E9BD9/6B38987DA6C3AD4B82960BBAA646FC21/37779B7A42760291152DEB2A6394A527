@@ -1,6 +1,6 @@
-# CreatorSphere — Investor Demo & Founder Operating System
+﻿# CreatorSphere — Investor Demo & Founder Operating System
 
-CreatorSphere is an **AI‑powered, privacy‑first creator monetization platform** where creators own their universe.
+CreatorSphere is an **AI?powered, privacy?first creator monetization platform** where creators own their universe.
 
 This repo is designed to show investors, partners, and agencies that:
 
@@ -32,11 +32,28 @@ This repo is designed to show investors, partners, and agencies that:
   - Migration funnel
   - Creator success handbook
   - VC FAQ
-  - Due‑diligence & data room checklists
+  - Due?diligence & data room checklists
   - Hustler founder story
 
 ## How to run
 
-```bash
+```
 npm install
 npm start
+
+```
+
+Then open:
+
+```
+http://localhost:3000
+
+```
+
+You’ll see the **CreatorSphere creator dashboard** demo, powered by real API endpoints.
+
+Use this repo to:
+
+- Pitch investors
+- Show live product?style UI
+- Walk through the docs in `docs/` as your **founder operating system**
